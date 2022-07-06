@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Contact;
+use App\Utilities\View;
 
 class HomeController
 {
@@ -13,6 +14,7 @@ class HomeController
     }
     public function index()
     {
-        $contacts = $this->contact->get();
+        $data = $this->contact->get();
+        View::include('home.index', $data);
     }
 }
