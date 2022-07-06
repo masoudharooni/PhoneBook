@@ -1,0 +1,19 @@
+{
+    "name": "masoudharooni/microframework",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "masoud harooni",
+            "email": "masoudharooni50@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "hisorange/browser-detect": "^4.5",
+        "catfan/medoo": "^2.1"
+    }
+}
